@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+
+<body style="display: flex; flex-direction: column; align-items: center; margin: 0; font-family: Arial, sans-serif; padding-top: 20px;">
+    <div class="head" style="text-align: center; font-size: 45px; margin-bottom: 20px;">
+        <div class="title">Registration Form CUI Wah</div>
+        <img src="images-removebg-preview.png" alt="comsats" style="max-width: 100%; height: auto; margin: 10px 0;">
+    </div>
+
+    <!-- Back Button -->
+    <a href="index.html" style="align-self: flex-start; margin-left: 20px; text-decoration: none; background-color: #007bff; color: white; padding: 10px 15px; border-radius: 5px;">Back</a>
+
+    <form action="index.html" method="get" style="display: flex; flex-direction: column; width: 80%; max-width: 600px; border: 1px solid #ccc; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); margin-top: 30px;">
+        <div class="form-row" style="display: flex; flex-wrap: wrap; justify-content: space-between; margin-bottom: 15px;">
+            <label for="name" style="margin: 5px; flex: 1 1 30%;">Name</label>
+            <input type="text" id="name" placeholder="Student name" required style="flex: 1 1 65%; padding: 10px; margin-left: 10px; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box;">
+        </div>
+        <div class="form-row" style="display: flex; flex-wrap: wrap; justify-content: space-between; margin-bottom: 15px;">
+            <label for="fname" style="margin: 5px; flex: 1 1 30%;">Father Name</label>
+            <input type="text" id="fname" placeholder="Write father name" required style="flex: 1 1 65%; padding: 10px; margin-left: 10px; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box;">
+        </div>
+        <div class="form-row" style="display: flex; flex-wrap: wrap; justify-content: space-between; margin-bottom: 15px;">
+            <label for="contact" style="margin: 5px; flex: 1 1 30%;">Contact No</label>
+            <input type="text" id="contact" placeholder="03xxx-xxxxxx" required style="flex: 1 1 65%; padding: 10px; margin-left: 10px; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box;">
+        </div>
+        <div class="form-row" style="display: flex; flex-wrap: wrap; justify-content: space-between; margin-bottom: 15px;">
+            <label for="email" style="margin: 5px; flex: 1 1 30%;">Email</label>
+            <input type="email" id="email" placeholder="abc@gmail.com" required style="flex: 1 1 65%; padding: 10px; margin-left: 10px; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box;">
+        </div>
+        <div class="form-row" style="display: flex; flex-wrap: wrap; justify-content: space-between; margin-bottom: 15px;">
+            <label for="gender" style="margin: 5px; flex: 1 1 30%;">Gender</label>
+            <select name="gender" id="gender" required style="flex: 1 1 65%; padding: 10px; margin-left: 10px; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box;">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Prefer not to say</option>
+            </select>
+        </div>
+        <div class="form-row" style="display: flex; flex-wrap: wrap; justify-content: space-between; margin-bottom: 15px;">
+            <label for="dob" style="margin: 5px; flex: 1 1 30%;">Date of Birth</label>
+            <input type="date" id="dob" required style="flex: 1 1 65%; padding: 10px; margin-left: 10px; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box;">
+        </div>
+        <div class="form-row" style="display: flex; flex-wrap: wrap; justify-content: space-between; margin-bottom: 15px;">
+            <label for="address" style="margin: 5px; flex: 1 1 30%;">Current Address</label>
+            <textarea name="address" id="address" cols="20" rows="3" required style="flex: 1 1 65%; padding: 10px; margin-left: 10px; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box; resize: none;"></textarea>
+        </div>
+        <div class="form-row" style="display: flex; flex-wrap: wrap; justify-content: space-between; margin-bottom: 15px;">
+            <label for="permanent-address" style="margin: 5px; flex: 1 1 30%;">Permanent Address</label>
+            <textarea name="permanent-address" id="permanent-address" cols="20" rows="3" required style="flex: 1 1 65%; padding: 10px; margin-left: 10px; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box; resize: none;"></textarea>
+        </div>
+        <div class="form-row" style="display: flex; flex-wrap: wrap; justify-content: space-between; margin-bottom: 15px;">
+            <label for="degree" style="margin: 5px; flex: 1 1 30%;">Choose Degree</label>
+            <select name="degree" id="degree" required style="flex: 1 1 65%; padding: 10px; margin-left: 10px; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box;">
+                <option value="BBA">BBA (Bachelor Of Business & Accounts)</option>
+                <option value="BSE">BSE (Bachelor Of Software Engineering)</option>
+                <option value="BSC">BSC (Bachelor Of Computer Science)</option>
+                <option value="BEE">BEE (Bachelor Of Electrical Engineering)</option>
+                <option value="BME">BME (Bachelor Of Mechanical Engineering)</option>
+                <option value="BCE">BCE (Bachelor Of Civil Engineering)</option>
+            </select>
+        </div>
+        <div class="form-row" style="display: flex; flex-wrap: wrap; justify-content: space-between; margin-bottom: 15px;">
+            <label for="last-degree" style="margin: 5px; flex: 1 1 30%;">Last Degree</label>
+            <select name="last-degree" id="last-degree" required style="flex: 1 1 65%; padding: 10px; margin-left: 10px; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box;">
+                <option value="FSC">FSC</option>
+                <option value="FCS">FCS</option>
+                <option value="ICS">ICS</option>
+            </select>
+        </div>
+        <div class="form-row" style="display: flex; flex-wrap: wrap; justify-content: space-between; margin-bottom: 15px;">
+            <label for="marks" style="margin: 5px; flex: 1 1 30%;">Marks</label>
+            <select name="marks" id="marks" required style="flex: 1 1 65%; padding: 10px; margin-left: 10px; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box;">
+                <option value="90-100">90-100%</option>
+                <option value="80-90">80-90%</option>
+                <option value="70-80">70-80%</option>
+                <option value="60-70">60-70%</option>
+                <option value="50-60">50-60%</option>
+            </select>
+        </div>
+        <div class="form-row" style="display: flex; flex-wrap: wrap; justify-content: space-between; margin-bottom: 15px;">
+            <label for="interests" style="margin: 5px; flex: 1 1 30%;">Interests</label>
+            <textarea name="interests" id="interests" cols="20" rows="5" style="flex: 1 1 65%; padding: 10px; margin-left: 10px; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box; resize: none;"></textarea>
+        </div>
+        <div class="form-row" style="display: flex; flex-wrap: wrap; justify-content: space-between; margin-bottom: 15px;">
+            <label for="hobbies" style="margin: 5px; flex: 1 1 30%;">Hobbies</label>
+            <textarea name="hobbies" id="hobbies" cols="20" rows="5" style="flex: 1 1 65%; padding: 10px; margin-left: 10px; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box; resize: none;"></textarea>
+        </div>
+        <audio class="play">
+            <source src="pick-92276.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+        <button type="submit" style="padding: 10px; background-color: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 16px;">Submit</button>
+    </form>
+</body>
+
+</html>
